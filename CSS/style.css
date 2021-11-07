@@ -120,7 +120,7 @@ hr {
   background: white;
   height: 80px;
 }
-.noms-plat p, .noms-plat h3 {
+.noms-plat .texte-menue, .noms-plat .sous-titre-menue {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
