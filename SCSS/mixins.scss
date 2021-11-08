@@ -1,5 +1,5 @@
   @mixin degrade($mouvement, $heart) { 
-    background-image: linear-gradient(to $mouvement, $heart); 
+    background: linear-gradient(to $mouvement, $heart); 
     color: transparent;
   -webkit-background-clip: text;
   background-clip: text;

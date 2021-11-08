@@ -5,7 +5,8 @@
   padding-bottom: 15px;
   display: flex;
   flex-direction: row;
-  .fa-arrow-left{
+}
+  .fleche{
       color: $darkgrey;
       font-size: 20px;
       margin-left: 20px;
@@ -13,14 +14,10 @@
   }
 img{
   width: 150px;
-  margin-left: 80px;
-  margin-top: 10px;
 }
 
 .image-entete-ohmyfood{
   width: 100%;
   height: 300px;
   object-fit: cover;
-}
-
 }
