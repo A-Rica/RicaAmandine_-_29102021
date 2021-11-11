@@ -22,3 +22,25 @@
   height: 300px;
   object-fit: cover;
 }
+
+/***Page Accueil***/
+
+.position-restaurant{
+  display: flex;
+  margin-top: -2px;
+  background-color: $blanc-casse-dark;
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 13px;
+  padding: 15px;
+  color: $brown;
+  justify-content: center;
+  .localisation{
+    margin-left: -60px;
+    margin-top: -0.5px;
+  }
+  .text-restaurant {
+    margin-left: 15px;
+    font-weight: bold;
+  }
+}

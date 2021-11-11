@@ -4,3 +4,9 @@
   -webkit-background-clip: text;
   background-clip: text;
   }
+  @mixin titre {
+    font-family: 'Roboto';
+    font-weight: bolder;
+    display: flex;
+    margin-left: 20px;
+  }
