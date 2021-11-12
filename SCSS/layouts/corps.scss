@@ -298,6 +298,7 @@ justify-content: center;
 
 .restaurant{
   display: flex;
+  flex-direction: column;
   width: 100%;
   margin-top: 20px;
   padding-bottom: 50px;
@@ -305,4 +306,73 @@ justify-content: center;
 
 .titre-restaurant{
 @include titre;
+}
+
+.cadre-restaurant{
+  width: 90%;
+  height: 200px;
+  background:$white;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px $lightgrey;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#premier-cadre-restau{
+  margin-top: 0px;
+}
+
+.lien-restaurant{
+  text-decoration: none;
+}
+
+.image-restaurant{
+  object-fit: cover;
+  width: 100%;
+  height: 130px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.nouveau-resto {
+  background: $couleur-tertiaire;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 80px;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: darken($couleur-tertiaire, 35%);
+  text-align: center;
+  position: absolute;
+  right: 40px;
+}
+
+.noms-choix-restaurant{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+  color: $black;
+  font-family: 'Roboto';
+}
+
+.lieu-restaurant{
+  display: flex;
+  color: $black;
+  font-family: 'Roboto';
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: -15px;
+  font-weight: lighter;
+}
+.coeur-fav {
+  float: right;
+  margin-right: 30px;
+  margin-top: -50px;
+  font-size: 23px;
+  color:$darkgrey;
+  cursor: pointer;
+  transition: color 1s ease-out;
+  &:hover{
+    font-weight: bold;
+      @include degrade(right top, $heart); }
 }
