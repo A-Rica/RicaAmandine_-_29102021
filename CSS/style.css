@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 .accueil {
-  background-color: #f6f6f6;
   padding: 0%;
   margin: 0%;
+  background: #f6f6f6;
   overflow-x: hidden;
 }
 
@@ -26,11 +26,11 @@
 .fleche {
   color: #4f4f4f;
   font-size: 20px;
-  margin-left: -110px;
+  margin-left: -550px;
 }
 
 .logo-menue {
-  width: 150px;
+  width: 200px;
 }
 
 .image-entete-ohmyfood {
@@ -39,20 +39,33 @@
   object-fit: cover;
 }
 
+@media (max-width: 599px) {
+  .fleche {
+    font-size: 15px;
+    margin-left: -90px;
+  }
+
+  .logo-menue {
+    width: 150px;
+  }
+}
 /***Page Accueil***/
 .position-restaurant {
   display: flex;
-  margin-top: -2px;
+  margin-top: 2px;
+  margin-left: 30%;
   background-color: #eaeaea;
-  width: 100%;
+  width: 35%;
+  align-items: center;
+  justify-content: center;
   font-family: "Roboto";
-  font-size: 13px;
+  font-size: 15px;
   padding: 15px;
   color: #353535;
-  justify-content: center;
+  border-radius: 20px;
 }
 .position-restaurant .localisation {
-  margin-left: -60px;
+  margin-left: 10px;
   margin-top: -0.5px;
 }
 .position-restaurant .text-restaurant {
@@ -60,6 +73,18 @@
   font-weight: bold;
 }
 
+@media (max-width: 599px) {
+  .position-restaurant {
+    margin-top: -2px;
+    margin-left: 0;
+    border-radius: 0;
+    width: 100%;
+    font-size: 13px;
+  }
+  .position-restaurant .localisation {
+    margin-left: -60px;
+  }
+}
 .position-menue {
   display: flex;
   flex-direction: column;
@@ -71,17 +96,17 @@
   border-radius: 40px 40px 0px 0px;
   padding-bottom: 80px;
   padding-top: 20px;
-  margin-top: -60px;
+  margin-top: -40px;
 }
 
 .noms-restaurant {
   font-family: "Shrikhand", cursive;
-  margin-left: 20px;
+  margin-left: 45%;
 }
 
 .icon-heart {
   float: right;
-  margin-right: 35px;
+  margin-right: 37%;
   margin-top: -55px;
   font-size: 25px;
   color: #4f4f4f;
@@ -97,7 +122,7 @@
 
 .titre-repas {
   color: #4f4f4f;
-  font-size: 17px;
+  font-size: 20px;
   margin-left: 20px;
   margin-top: 40px;
   text-transform: uppercase;
@@ -108,136 +133,171 @@
 hr {
   background-color: #99E2D0;
   height: 3px;
-  width: 45px;
+  width: 50px;
   border: none;
   margin-top: -9px;
   margin-left: 20px;
 }
 
-@keyframes animation-menue {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
+@media (max-width: 599px) {
+  .corps-menu-ohmyfood {
+    margin-top: -60px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .noms-restaurant {
+    margin-left: 20px;
+  }
+
+  .icon-heart {
+    margin-right: 35px;
+  }
+
+  .titre-repas {
+    color: #4f4f4f;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+  }
+
+  hr {
+    background-color: #99E2D0;
+    height: 3px;
+    width: 45px;
+    border: none;
+    margin-top: -9px;
+    margin-left: 20px;
+  }
+
+  @keyframes animation-menue {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #anim-un {
+    animation-name: animation-menue;
+    animation-duration: 1s;
+    animation-iteration-count: forwards;
+  }
+
+  #anim-deux {
+    animation-name: animation-menue;
+    animation-duration: 2s;
+    animation-iteration-count: forwards;
+  }
+
+  #anim-trois {
+    animation-name: animation-menue;
+    animation-duration: 3s;
+    animation-iteration-count: forwards;
+  }
+
+  #anim-quatre {
+    animation-name: animation-menue;
+    animation-duration: 3s;
+    animation-iteration-count: forwards;
+  }
+
+  .cadre-menue {
+    width: 90%;
+    height: 80px;
+    margin-left: 12px;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 15px;
+    box-shadow: 0px 0px 10px #a1a1a1;
+    border-radius: 20px;
+  }
+  .cadre-menue:hover > .anim-bouton {
+    width: 17%;
+  }
+  .cadre-menue:hover > .anim-bouton .bouton-ok {
+    transform: rotate(0deg);
+  }
+
+  .noms-plat {
+    padding-left: 10px;
+    flex-grow: 1;
+    width: 40%;
+    font-family: "Roboto";
+    background: white;
+    padding-left: 10px;
+    height: 80px;
+  }
+  .noms-plat .texte-menue, .noms-plat .sous-titre-menue {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sous-titre-menue {
+    font-weight: bolder;
+  }
+
+  .texte-menue {
+    font-weight: lighter;
+    color: #353535;
+    margin-top: -15px;
+    font-size: 15px;
+  }
+
+  .prix-menue {
+    float: right;
+    width: 70px;
+    color: #353535;
+    font-weight: bolder;
+    margin-top: 0px;
+    background-color: white;
+    height: 80px;
+  }
+  .prix-menue span {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 45px;
+  }
+
+  .anim-bouton {
+    display: flex;
+    width: 0;
+    background: #99E2D0;
+    transition: all 2s;
+  }
+  .anim-bouton .bouton-ok {
+    margin: auto;
+    color: white;
+    font-size: 25px;
+    transform: rotate(-360deg);
+    transition: transform 1s ease-in-out;
+  }
+
+  .bouton-commander {
+    width: 100px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 150px;
+    background: linear-gradient(to right top, #9356DC, #FF79DA);
+    border: none;
+    border-radius: 20px;
+    font-family: "Roboto";
+    color: white;
+    box-shadow: 0px 0px 10px #a1a1a1;
+  }
+  .bouton-commander:hover {
+    box-shadow: 0px 0px 10px #4f4f4f;
+    filter: brightness(115%);
+  }
+  .bouton-commander:active {
+    color: #f6f6f6;
   }
 }
-#anim-un {
-  animation-name: animation-menue;
-  animation-duration: 1s;
-  animation-iteration-count: forwards;
-}
-
-#anim-deux {
-  animation-name: animation-menue;
-  animation-duration: 2s;
-  animation-iteration-count: forwards;
-}
-
-#anim-trois {
-  animation-name: animation-menue;
-  animation-duration: 3s;
-  animation-iteration-count: forwards;
-}
-
-#anim-quatre {
-  animation-name: animation-menue;
-  animation-duration: 3s;
-  animation-iteration-count: forwards;
-}
-
-.cadre-menue {
-  width: 90%;
-  height: 80px;
-  margin-left: 12px;
-  display: flex;
-  cursor: pointer;
-  overflow: hidden;
-  margin-top: 15px;
-  box-shadow: 0px 0px 10px #a1a1a1;
-  border-radius: 20px;
-}
-.cadre-menue:hover > .anim-bouton {
-  width: 17%;
-}
-.cadre-menue:hover > .anim-bouton .bouton-ok {
-  transform: rotate(0deg);
-}
-
-.noms-plat {
-  padding-left: 10px;
-  flex-grow: 1;
-  width: 40%;
-  font-family: "Roboto";
-  background: white;
-  padding-left: 10px;
-  height: 80px;
-}
-.noms-plat .texte-menue, .noms-plat .sous-titre-menue {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.sous-titre-menue {
-  font-weight: bolder;
-}
-
-.texte-menue {
-  font-weight: lighter;
-  color: #353535;
-  margin-top: -15px;
-  font-size: 15px;
-}
-
-.prix-menue {
-  float: right;
-  width: 70px;
-  color: #353535;
-  font-weight: bolder;
-  margin-top: 0px;
-  background-color: white;
-  height: 80px;
-}
-.prix-menue span {
-  display: flex;
-  margin-left: 25px;
-  margin-top: 45px;
-}
-
-.anim-bouton {
-  display: flex;
-  width: 0;
-  background: #99E2D0;
-  transition: all 2s;
-}
-.anim-bouton .bouton-ok {
-  margin: auto;
-  color: white;
-  font-size: 25px;
-  transform: rotate(-360deg);
-  transition: transform 1s ease-in-out;
-}
-
-.bouton-commander {
-  background: linear-gradient(to right top, #9356DC, #FF79DA);
-  border: none;
-  width: 100px;
-  padding: 10px;
-  border-radius: 20px;
-  font-family: "Roboto";
-  color: white;
-  box-shadow: 0px 0px 10px #a1a1a1;
-  margin-top: 40px;
-  margin-left: 150px;
-  cursor: pointer;
-}
-.bouton-commander:active {
-  color: #f6f6f6;
-}
-
 /***Accueil***/
 .en-tete-accueil {
   display: flex;
@@ -269,14 +329,17 @@ hr {
 .bouton-explorer {
   background: linear-gradient(to right top, #9356DC, #FF79DA);
   border: none;
-  padding: 13px 20px 13px 20px;
   border-radius: 20px;
   font-family: "Roboto";
   color: white;
   box-shadow: 0px 0px 10px #a1a1a1;
+  padding: 13px 20px 13px 20px;
   margin: 0;
   margin-top: 30px;
-  cursor: pointer;
+}
+.bouton-explorer:hover {
+  box-shadow: 0px 0px 10px #4f4f4f;
+  filter: brightness(115%);
 }
 .bouton-explorer:active {
   color: #f6f6f6;
