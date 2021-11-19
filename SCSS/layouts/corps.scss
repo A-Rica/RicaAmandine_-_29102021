@@ -157,7 +157,37 @@
       margin-left: 150px;
       @include bouton;
     }
-  
+    @media only screen and (min-width : 430px) {
+      .corps-menu-ohmyfood{
+        margin-top: -40px;
+        width: 99%;
+        padding-right: 15px;
+    }
+      .noms-restaurant {
+         text-align: center;
+        }
+        .icon-heart { 
+          margin-right: 475px;
+          margin-top: -50px;
+        }
+        .titre-repas{
+          font-size: 20px;
+      }
+      hr{
+          height: 3px;
+          width: 50px;
+      }
+      .contenant-menue{
+        display: flex;
+        flex-direction: row;
+      }
+        .cadre-menue{
+           width: 35%;
+       }
+        .bouton-commander{
+          margin-left: 750px;
+        }
+    }
     /***Accueil***/
 
     .en-tete-accueil{
@@ -358,4 +388,41 @@ justify-content: center;
     font-weight: bold;
       @include degrade(right top, $heart);
      }
+    }
+    @media only screen and (min-width : 430px) {
+
+      .explorer-menue{
+       .texte-explorer{
+          width: 100%;
+        }
+      }
+
+  .position-choix-restaurant{
+    display: flex;
+    flex-direction: row;
+  }
+  .choix-restaurant{
+    width: 31%;
+    margin-top: 0px;
+  }  
+  
+  .position-cadre-restau {
+    display: flex;
+    flex-direction: row;
+}
+
+  .cadre-restaurant{
+    width: 350px;
+    margin-top: 0px;
+  }
+  
+  .nouveau-resto {
+    left: 0;
+  }
+  #new1{
+    margin-left: 35px;
+  }
+  #new2{
+    margin-left: 400px;
+  }
     }
