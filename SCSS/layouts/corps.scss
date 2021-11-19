@@ -1,63 +1,32 @@
-.position-menue{
-  display: flex;
-flex-direction: column;
-}
+ .position-menue{
+    display: flex;
+  flex-direction: column;
+  }
 
-.corps-menu-ohmyfood{
-  background-color: $blanc-casse;
-  width: 100%;
-  border-radius: 40px 40px 0px 0px;
-  padding-bottom: 80px;
-  padding-top: 20px;
-  margin-top: -40px;
-}
-
-.noms-restaurant {
-  font-family: 'Shrikhand', cursive;
-  margin-left: 45%;
- }
-
- .icon-heart {
-  float: right;
-  margin-right: 37%;
-  margin-top: -55px;
-  font-size: 25px;
-  color:$darkgrey;
-  transition: color 1s ease-out;
-  &:hover{
-      font-weight: bold;
-      @include degrade(right top, $heart); }
-}
-
-.titre-repas{
-  color: $darkgrey;
-  font-size: 20px;
-  margin-left: 20px;
-  margin-top: 40px;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-}
-hr{
-  background-color: $couleur-tertiaire;
-  height: 3px;
-  width: 50px;
-  border: none;
-  margin-top: -9px;
-  margin-left: 20px;
-}
-@media (max-width: 599px) {
-
-.corps-menu-ohmyfood{
+  .corps-menu-ohmyfood{
+    background-color: $blanc-casse;
+    width: 100%;
     margin-top: -60px;
+    border-radius: 40px 40px 0px 0px;
+    padding-bottom: 80px;
+    padding-top: 20px;  
 }
 
-.noms-restaurant {
+  .noms-restaurant {
+    font-family: 'Shrikhand', cursive;
      margin-left: 20px;
     }
-    .icon-heart {
-       margin-right: 35px;
-    } 
+    .icon-heart { 
+      float: right;
+      margin-right: 35px;
+      margin-top: -55px;
+      font-size: 25px;
+      color:$darkgrey;
+      transition: color 1s ease-out;
+      &:hover{
+          font-weight: bold;
+          @include degrade(right top, $heart); }
+    }
     .titre-repas{
       color: $darkgrey;
       font-size: 17px;
@@ -140,6 +109,7 @@ hr{
        text-overflow: ellipsis;
      }
    }
+   
    .sous-titre-menue{
     font-weight: bolder;
   }
@@ -187,7 +157,7 @@ hr{
       margin-left: 150px;
       @include bouton;
     }
-  }
+  
     /***Accueil***/
 
     .en-tete-accueil{
@@ -386,5 +356,6 @@ justify-content: center;
   transition: color 1s ease-out;
   &:hover{
     font-weight: bold;
-      @include degrade(right top, $heart); }
-}
+      @include degrade(right top, $heart);
+     }
+    }

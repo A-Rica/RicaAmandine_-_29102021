@@ -1,22 +1,22 @@
-.entete-ohmyfood{
-  background-color: $white;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
+  .entete-ohmyfood{
+    background-color: $white;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
 
-.fleche{
-  color: $darkgrey;
-  font-size: 20px;
-  margin-left: -550px;
-}
+  .fleche{
+    color: $darkgrey;
+    font-size: 15px;
+      margin-left: -90px;
+  }
 
 .logo-menue{
-  width: 200px;
+  width: 150px;
 }
 
 .image-entete-ohmyfood{
@@ -25,50 +25,31 @@
   object-fit: cover;
 }
 
-@media (max-width: 599px) {
-  .fleche{
-    font-size: 15px;
-      margin-left: -90px;
-  }
-.logo-menue{
-  width: 150px;
-}
-
-}
 /***Page Accueil***/
 
 .position-restaurant{
-display: flex;
-margin-top: 2px;
-margin-left: 30%;
-background-color: $blanc-casse-dark;
-width: 35%;
-align-items: center;
-justify-content: center;
-font-family: 'Roboto';
-font-size: 15px;
-padding: 15px;
-color: $brown;
-border-radius: 20px;
-.localisation{
-  margin-left: 10px;
-  margin-top: -0.5px;
-}
-.text-restaurant {
-  margin-left: 15px;
-  font-weight: bold;
-}
-}
-
-@media (max-width: 599px) {
-.position-restaurant{
+  display: flex;
   margin-top: -2px;
+  align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 15px;
+    padding: 15px;
+    color: $brown;
+  background-color: $blanc-casse-dark;
   margin-left: 0;
   border-radius: 0;
   width: 100%;
   font-size: 13px;
-  .localisation{
+  .localisation{   
+  margin-top: -0.5px;
     margin-left: -60px;
   }
+  .text-restaurant {
+    margin-left: 15px;
+    font-weight: bold;
+  }
 }
+.largeur-header{
+  width: 100%;
 }
