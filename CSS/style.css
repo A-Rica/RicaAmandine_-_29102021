@@ -199,28 +199,28 @@ hr {
     transform: translateY(0);
   }
 }
-#anim-un {
+#anim-un #anim-1 #anim-one {
   animation-name: animation-menue;
   animation-duration: 1s;
-  animation-iteration-count: forwards;
+  animation-fill-mode: forwards;
 }
 
-#anim-deux {
+#anim-deux #anim-2 #anim-two {
   animation-name: animation-menue;
   animation-duration: 2s;
-  animation-iteration-count: forwards;
+  animation-fill-mode: forwards;
 }
 
-#anim-trois {
+#anim-trois #anim-3 #anim-three {
   animation-name: animation-menue;
   animation-duration: 3s;
-  animation-iteration-count: forwards;
+  animation-fill-mode: forwards;
 }
 
-#anim-quatre {
+#anim-quatre #anim-4 #anim-four {
   animation-name: animation-menue;
   animation-duration: 3s;
-  animation-iteration-count: forwards;
+  animation-fill-mode: forwards;
 }
 
 .cadre-menue {
@@ -357,29 +357,30 @@ hr {
 /***Accueil***/
 .en-tete-accueil {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 55px;
 }
 
-.explorer-menue {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-.explorer-menue .texte-explorer {
-  width: 50%;
-  font-weight: bold;
+.texte-explorer {
+  width: 70%;
   font-size: 20px;
+  text-align: center;
+  margin-left: 45px;
   font-family: "Roboto";
 }
-.explorer-menue .sous-texte-explorer {
-  width: 70%;
-  margin-top: 10px;
+
+.sous-texte-explorer {
+  text-align: center;
   color: #353535;
   font-size: 15px;
   font-family: "Roboto";
+}
+
+.sous-titre-h3 {
+  display: flex;
+  margin-top: -5px;
+  font-weight: lighter;
 }
 
 .bouton-explorer {
@@ -391,7 +392,8 @@ hr {
   box-shadow: 0px 0px 10px #a1a1a1;
   padding: 13px 20px 13px 20px;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-left: 5px;
 }
 .bouton-explorer:hover {
   box-shadow: 0px 0px 10px #4f4f4f;
@@ -415,6 +417,7 @@ hr {
   font-family: "Roboto";
   font-weight: bolder;
   display: flex;
+  font-size: 20px;
   margin-left: 20px;
 }
 
@@ -501,6 +504,7 @@ hr {
   font-family: "Roboto";
   font-weight: bolder;
   display: flex;
+  font-size: 20px;
   margin-left: 20px;
 }
 
@@ -547,6 +551,7 @@ hr {
   display: flex;
   margin-top: 10px;
   margin-left: 15px;
+  font-size: 15px;
   color: black;
   font-family: "Roboto";
 }
@@ -557,7 +562,7 @@ hr {
   font-family: "Roboto";
   font-size: 15px;
   margin-left: 15px;
-  margin-top: -15px;
+  margin-top: -18px;
   font-weight: lighter;
 }
 
@@ -579,8 +584,18 @@ hr {
 }
 
 @media only screen and (min-width: 430px) {
-  .explorer-menue .texte-explorer {
+  .en-tete-accueil {
+    width: 70%;
+    margin-left: 225px;
+  }
+
+  .texte-explorer {
     width: 100%;
+    margin-left: 10px;
+  }
+
+  .sous-titre-h3 {
+    margin-left: 320px;
   }
 
   .position-choix-restaurant {
@@ -666,6 +681,12 @@ hr {
 }
 
 @media only screen and (min-width: 430px) {
+  .footer-menue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .navigation-footer {
     display: inline-flex;
   }
