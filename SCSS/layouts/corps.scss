@@ -55,46 +55,16 @@
         transform: translateY(0);
       }
     }
-    #anim-un{
-      #anim-1{
-        #anim-one{
-      animation-name : animation-menue;
-      animation-duration : 1s;
+    @each $titre, $duree in (anim-1, 1s), (anim-2, 2s), (anim-3, 3s), (anim-4, 4s) {
+      .#{$titre} {
+        animation-name : animation-menue;
+      animation-duration : $duree;
       animation-fill-mode: forwards;
-        }
       }
     }
-    #anim-deux{
-      #anim-2{
-        #anim-two{
-      animation-name : animation-menue;
-      animation-duration : 2s;
-      animation-fill-mode: forwards;
-    }
-  }
-    }
-    #anim-trois{
-      #anim-3{
-        #anim-three{
-      animation-name : animation-menue;
-      animation-duration : 3s;
-      animation-fill-mode: forwards;
-    }
-  }
-    }
-
-  #anim-quatre{
-    #anim-4{
-      #anim-four{
-    animation-name : animation-menue;
-      animation-duration : 3s;
-      animation-fill-mode: forwards;
-    }
-  }
-  }
     .cadre-menue{
        width: 90%;
-       height: 80px;
+       height: 70px;
        margin-left: 12px;
      display: flex;
      cursor: pointer;
@@ -111,12 +81,12 @@
    }
    
    .noms-plat{
-     padding-left: 10px;
       flex-grow: 1;
      width: 40%;
      font-family: 'Roboto';
      background: white;
      padding-left: 10px;
+     margin-top: -5px;
      height: 80px;
      
      .texte-menue, .sous-titre-menue{
@@ -142,7 +112,7 @@
      width: 70px;
      color: $brown;
      font-weight: bolder;
-     margin-top: -0px;
+     margin-top: -7px;
      background-color: $white;
      height: 80px;
      span{
@@ -167,11 +137,12 @@
     }
 
     .bouton-commander{
-      width: 100px;
-      padding: 10px;
-      margin-top: 40px;
-      margin-left: 150px;
+      width: 170px;
+      padding: 14px;
+      margin-top: 50px;
+      margin-left: 120px;
       @include bouton;
+      font-size: 15px;
     }
     @media only screen and (min-width : 430px) {
       .corps-menu-ohmyfood{
@@ -393,7 +364,7 @@ margin-left: 55px;
   font-family: 'Roboto';
   font-size: 15px;
   margin-left: 15px;
-  margin-top: -18px;
+  margin-top: -23px;
   font-weight: lighter;
 }
 .coeur-fav {

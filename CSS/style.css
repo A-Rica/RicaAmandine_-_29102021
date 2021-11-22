@@ -20,7 +20,7 @@
   position: absolute;
   z-index: 1;
   animation: glissement 2000ms both;
-  animation-delay: 1000ms;
+  animation-delay: 500ms;
 }
 
 @keyframes glissement {
@@ -199,33 +199,33 @@ hr {
     transform: translateY(0);
   }
 }
-#anim-un #anim-1 #anim-one {
+.anim-1 {
   animation-name: animation-menue;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-#anim-deux #anim-2 #anim-two {
+.anim-2 {
   animation-name: animation-menue;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
-#anim-trois #anim-3 #anim-three {
+.anim-3 {
   animation-name: animation-menue;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
-#anim-quatre #anim-4 #anim-four {
+.anim-4 {
   animation-name: animation-menue;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
 }
 
 .cadre-menue {
   width: 90%;
-  height: 80px;
+  height: 70px;
   margin-left: 12px;
   display: flex;
   cursor: pointer;
@@ -242,12 +242,12 @@ hr {
 }
 
 .noms-plat {
-  padding-left: 10px;
   flex-grow: 1;
   width: 40%;
   font-family: "Roboto";
   background: white;
   padding-left: 10px;
+  margin-top: -5px;
   height: 80px;
 }
 .noms-plat .texte-menue, .noms-plat .sous-titre-menue {
@@ -272,7 +272,7 @@ hr {
   width: 70px;
   color: #353535;
   font-weight: bolder;
-  margin-top: 0px;
+  margin-top: -7px;
   background-color: white;
   height: 80px;
 }
@@ -297,16 +297,17 @@ hr {
 }
 
 .bouton-commander {
-  width: 100px;
-  padding: 10px;
-  margin-top: 40px;
-  margin-left: 150px;
+  width: 170px;
+  padding: 14px;
+  margin-top: 50px;
+  margin-left: 120px;
   background: linear-gradient(to right top, #9356DC, #FF79DA);
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   font-family: "Roboto";
   color: white;
   box-shadow: 0px 0px 10px #a1a1a1;
+  font-size: 15px;
 }
 .bouton-commander:hover {
   box-shadow: 0px 0px 10px #4f4f4f;
@@ -386,7 +387,7 @@ hr {
 .bouton-explorer {
   background: linear-gradient(to right top, #9356DC, #FF79DA);
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   font-family: "Roboto";
   color: white;
   box-shadow: 0px 0px 10px #a1a1a1;
@@ -562,7 +563,7 @@ hr {
   font-family: "Roboto";
   font-size: 15px;
   margin-left: 15px;
-  margin-top: -18px;
+  margin-top: -23px;
   font-weight: lighter;
 }
 
@@ -648,6 +649,7 @@ hr {
   color: #f6f6f6;
   font-size: 15px;
   font-family: "Roboto";
+  margin-left: -10px;
 }
 .navigation-footer ul {
   list-style-type: none;
