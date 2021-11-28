@@ -418,10 +418,10 @@ margin-left: 55px;
   .nouveau-resto {
     left: 0;
   }
-  #new1{
-    margin-left: 35px;
-  }
-  #new2{
-    margin-left: 400px;
-  }
+
+  @each $nouveau, $marge in (new1, 35px), (new2, 400px){
+    .#{$nouveau} {
+      margin-left: $marge;
     }
+  }
+}

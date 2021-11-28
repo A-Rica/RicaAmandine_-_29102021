@@ -623,11 +623,11 @@ hr {
     left: 0;
   }
 
-  #new1 {
+  .new1 {
     margin-left: 35px;
   }
 
-  #new2 {
+  .new2 {
     margin-left: 400px;
   }
 }
@@ -696,7 +696,7 @@ hr {
   .logo-menue-negatif {
     margin-left: 0px;
     height: 60px;
-    width: 155px;
+    width: 200px;
     margin-top: 30px;
   }
 }
