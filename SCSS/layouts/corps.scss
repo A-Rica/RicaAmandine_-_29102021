@@ -55,10 +55,11 @@
         transform: translateY(0);
       }
     }
-    @each $titre, $duree in (anim-1, 1s), (anim-2, 2s), (anim-3, 3s), (anim-4, 4s) {
-      .#{$titre} {
-        animation-name : animation-menue;
-      animation-duration : $duree;
+    
+    @for $index from 1 through 5{
+      .anim-#{$index}{
+      animation-name : animation-menue;
+      animation-duration : $index *1s;
       animation-fill-mode: forwards;
       }
     }

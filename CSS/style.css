@@ -223,6 +223,12 @@ hr {
   animation-fill-mode: forwards;
 }
 
+.anim-5 {
+  animation-name: animation-menue;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
 .cadre-menue {
   width: 90%;
   height: 70px;
