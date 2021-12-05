@@ -108,11 +108,38 @@
   font-weight: bold;
 }
 
-.largeur-header {
-  width: 100%;
-}
+@media only screen and (min-width: 768px) {
+  .largeur-header {
+    width: 100%;
+  }
 
-@media only screen and (min-width: 430px) {
+  .fleche {
+    margin-left: -280px;
+  }
+
+  .logo-menue {
+    width: 190px;
+  }
+
+  /***Page Accueil***/
+  .position-restaurant {
+    margin-top: 12px;
+    margin-left: 39%;
+    border-radius: 20px;
+    width: 20%;
+  }
+  .position-restaurant .localisation {
+    margin-left: -10px;
+  }
+  .position-restaurant .text-restaurant {
+    margin-left: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .largeur-header {
+    width: 100%;
+  }
+
   .fleche {
     margin-left: -600px;
   }
@@ -323,7 +350,46 @@ hr {
   color: #f6f6f6;
 }
 
-@media only screen and (min-width: 430px) {
+@media only screen and (min-width: 768px) {
+  .corps-menu-ohmyfood {
+    margin-top: -40px;
+    width: 99%;
+    padding-right: 15px;
+  }
+
+  .noms-restaurant {
+    text-align: center;
+  }
+
+  .icon-heart {
+    margin-right: 225px;
+    margin-top: -50px;
+  }
+
+  .titre-repas {
+    font-size: 20px;
+  }
+
+  hr {
+    height: 3px;
+    width: 50px;
+  }
+
+  .contenant-menue {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cadre-menue {
+    width: 31%;
+  }
+
+  .bouton-commander {
+    margin-left: 330px;
+  }
+}
+@media only screen and (min-width: 1024px) {
   .corps-menu-ohmyfood {
     margin-top: -40px;
     width: 99%;
@@ -350,6 +416,7 @@ hr {
 
   .contenant-menue {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
   }
 
@@ -590,7 +657,56 @@ hr {
   background-clip: text;
 }
 
-@media only screen and (min-width: 430px) {
+@media only screen and (min-width: 768px) {
+  .en-tete-accueil {
+    width: 70%;
+    margin-left: 105px;
+  }
+
+  .texte-explorer {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .sous-titre-h3 {
+    margin-left: 80px;
+  }
+
+  .position-choix-restaurant {
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+  }
+
+  .choix-restaurant {
+    width: 31%;
+    margin-top: 0px;
+  }
+
+  .position-cadre-restau {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .cadre-restaurant {
+    width: 375px;
+    margin-top: 20px;
+  }
+
+  .nouveau-resto {
+    left: 0;
+  }
+
+  .new1 {
+    margin-left: 35px;
+  }
+
+  .new2 {
+    margin-left: 430px;
+  }
+}
+@media only screen and (min-width: 1024px) {
   .en-tete-accueil {
     width: 70%;
     margin-left: 225px;

@@ -50,29 +50,61 @@
     font-weight: bold;
   }
 }
-.largeur-header{
-  width: 100%;
-}
-@media only screen and (min-width : 430px) {
-  .fleche{
-      margin-left: -600px;
+@media only screen and (min-width :  768px) {
+  .largeur-header{
+    width: 100%;
   }
 
+    .fleche{
+      margin-left: -280px;
+  }
+
+
 .logo-menue{
-  width: 190px;
+width: 190px;
 }
+
 /***Page Accueil***/
 
 .position-restaurant{
-  margin-top: 12px;
-  margin-left: 39%;
-  border-radius: 20px;
-  width: 20%;
-  .localisation{   
-    margin-left: -10px;
-  }
-  .text-restaurant {
-    margin-left: 30px;
-  }
+margin-top: 12px;
+margin-left: 39%;
+border-radius: 20px;
+width: 20%;
+.localisation{   
+  margin-left: -10px;
 }
-  } 
+.text-restaurant {
+  margin-left: 30px;
+}
+}
+} 
+
+@media only screen and (min-width :  1024px) {
+  .largeur-header{
+    width: 100%;
+  }
+    .fleche{
+      margin-left: -600px;
+}
+
+
+.logo-menue{
+width: 190px;
+}
+
+/***Page Accueil***/
+
+.position-restaurant{
+margin-top: 12px;
+margin-left: 39%;
+border-radius: 20px;
+width: 20%;
+.localisation{   
+  margin-left: -10px;
+}
+.text-restaurant {
+  margin-left: 30px;
+}
+}
+} 
